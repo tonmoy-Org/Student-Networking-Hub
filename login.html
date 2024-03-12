@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Networking Hub</title>
+    <script src="https://kit.fontawesome.com/add6e03308.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <section>
+        <nav class="bg-gray-800 p-4 fixed w-full z-10">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <img class="w-10 me-3" src="./src/graduation-cap.png" alt="">
+                    <a href="#" class="text-white text-lg font-bold hidden lg:block">Student Networking Hub</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="./index.html" class="text-gray-300 hover:text-white px-4">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">About</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">Services</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">Contact</a>
+                </div>
+                <div class="relative md:ml-4 flex gap-5">
+                    <input type="text"
+                        class="bg-white text-gray-900  px-4 py-1 focus:outline-none focus:bg-white focus:text-gray-900"
+                        placeholder="Search">
+                    <div class="text-white">
+                        <a href="./login.html">Login</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+    <div class="pt-10 md:pt-28">
+        <h1 class="text-center text-4xl py-3 font-bold">Login Now !</h1>    
+        <div class="flex justify-center items-center">
+            <div class="w-full max-w-md bg-white shadow-md rounded-lg p-8">
+
+                <form class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email"
+                            class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            required>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-gray-700">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password"
+                            class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                            required>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

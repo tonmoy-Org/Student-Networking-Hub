@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Networking Hub</title>
+    <script src="https://kit.fontawesome.com/add6e03308.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <section>
+        <nav class="bg-gray-800 p-4 fixed w-full z-10">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <img class="w-10 me-3" src="./src/graduation-cap.png" alt="">
+                    <a href="#" class="text-white text-lg font-bold hidden lg:block">Student Networking Hub</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#" class="text-gray-300 hover:text-white px-4">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">About</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">Services</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-4">Contact</a>
+                </div>
+                <div class="relative md:ml-4 flex gap-5">
+                    <input type="text"
+                        class="bg-white text-gray-900  px-4 py-1 focus:outline-none focus:bg-white focus:text-gray-900"
+                        placeholder="Search">
+                    <div class="text-white">
+                        <a href="./login.html">Login</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- Header -->
+    <section class="lg:px-16 px-5 lg:px-36 lg:flex justify-center pt-24 mb-28">
+        <div class="flex gap-8 items-start justify-center">
+            <div class="hidden lg:block">
+                <div class="card w-[270px] bg-white shadow-xl">
+                    <div class="relative h-40 overflow-hidden">
+                        <img class="object-cover w-full h-full brightness-50" src="./src/profile-banner.webp"
+                            alt="Shoes">
+
+                        <div class="absolute bottom-0 left-0 w-full flex justify-center">
+                            <img class="rounded-full w-20 h-20" src="./src/convo-2.jpg" alt="Profile Picture">
+                        </div>
+                    </div>
+                    <div class="profile-desc text-center pb-12 pt-5">
+                        <h6 class="author text-lg font-semibold"><a href="profile.html"
+                                class="text-blue-500 hover:underline">Erik Jhonson</a></h6>
+                        <p class="text-gray-600 mt-2 p-3">Any one can join with us if you want. Connect with us on
+                            social
+                            media!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- newsfeed -->
+            <div>
+                <div class="flex items-center justify-center p-4 mb-8 bg-white">
+                    <img src="./src/convo-2.jpg" alt="Profile Picture" class="w-10 h-10 rounded-full mr-4">
+                    <div class="flex flex-grow">
+                        <input type="text" class="bg-gray-200 text-gray-900 rounded-full px-4 py-1 me-3  flex-grow"
+                            placeholder="Share your thoughts...">
+                        <button
+                            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Share</button>
+                    </div>
+                </div>
+                <div class="card lg:w-[700px] bg-white shadow-xl flex flex-col p-6">
+                    <div class="flex items-center">
+                        <img src="./src/profile-small-1.webp" alt="Profile Picture"
+                            class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h2 class="font-semibold">John Doe</h2>
+                            <p class="text-gray-500">2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="card-body flex-1 py-5">
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.</p>
+                    </div>
+                    <figure>
+                        <img src="./src/diu.convo.jpg" alt="Shoes"
+                            class="w-full h-full rounded-xl object-cover">
+                    </figure>
+                    <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/heart.png" alt="">
+
+                                <span class="text-gray-500">24</span>
+                            </button>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/comment.png" alt="">
+                                <span class="text-gray-500">16</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/share.png" alt="">
+                                <span class="text-gray-500">20</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:w-[700px] bg-white shadow-xl flex flex-col p-6 my-8">
+                    <div class="flex items-center">
+                        <img src="./src/profile-small-1.webp" alt="Profile Picture"
+                            class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h2 class="font-semibold">John Doe</h2>
+                            <p class="text-gray-500">2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="card-body flex-1 py-5">
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.</p>
+                    </div>
+                    <figure>
+                        <img src="./src/diu.convo1.jpg" alt="Shoes"
+                            class="w-full h-full rounded-xl object-cover">
+                    </figure>
+                    <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/heart.png" alt="">
+
+                                <span class="text-gray-500">24</span>
+                            </button>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/comment.png" alt="">
+                                <span class="text-gray-500">16</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/share.png" alt="">
+                                <span class="text-gray-500">20</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card lg:w-[700px] bg-white shadow-xl flex flex-col p-6 my-8">
+                    <div class="flex items-center">
+                        <img src="./src/profile-small-1.webp" alt="Profile Picture"
+                            class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h2 class="font-semibold">John Doe</h2>
+                            <p class="text-gray-500">2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="card-body flex-1 py-5">
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.</p>
+                    </div>
+                    <figure>
+                        <img src="./src/diu.convo1.jpg" alt="Shoes"
+                            class="w-full h-full rounded-xl object-cover">
+                    </figure>
+                    <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/heart.png" alt="">
+
+                                <span class="text-gray-500">24</span>
+                            </button>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/comment.png" alt="">
+                                <span class="text-gray-500">16</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="flex items-center space-x-2">
+                                <img class="w-6" src="./src/share.png" alt="">
+                                <span class="text-gray-500">20</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hidden lg:block">
+                <div class="card lg:w-[270px] w-80 bg-white shadow-xl flex flex-col">
+                    <h1 class="text-xl p-3 ps-5 font-bold">Recent Notifications</h1>
+                    <div class="px-2">
+                        <div class="flex items-center p-4">
+                            <img src="./src/profile-35x35-9.webp" alt="Profile Picture"
+                                class="w-10 h-10 rounded-full mr-4">
+                            <div>
+                                <h2 class="font-semibold">Any one can join with us if you want</h2>
+                                <p class="text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4">
+                            <img src="./src/profile-35x35-8.webp" alt="Profile Picture"
+                                class="w-10 h-10 rounded-full mr-4">
+                            <div>
+                                <h2 class="font-semibold">Any one can join with us if you want</h2>
+                                <p class="text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4">
+                            <img src="./src/profile-35x35-7.webp" alt="Profile Picture"
+                                class="w-10 h-10 rounded-full mr-4">
+                            <div>
+                                <h2 class="font-semibold">Any one can join with us if you want</h2>
+                                <p class="text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4">
+                            <img src="./src/profile-35x35-6.webp" alt="Profile Picture"
+                                class="w-10 h-10 rounded-full mr-4">
+                            <div>
+                                <h2 class="font-semibold">Any one can join with us if you want</h2>
+                                <p class="text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4">
+                            <img src="./src/profile-35x35-4.webp" alt="Profile Picture"
+                                class="w-10 h-10 rounded-full mr-4">
+                            <div>
+                                <h2 class="font-semibold">Any one can join with us if you want</h2>
+                                <p class="text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
